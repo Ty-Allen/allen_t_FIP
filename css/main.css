@@ -68,9 +68,8 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 #siteContainer 
 {
 	margin: 0 auto;
-	width: 920px;
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 960px;
+	background-image: linear-gradient(#aceb96, #268209);
 }
 
 /*This is a flex container*/
@@ -81,6 +80,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	flex-direction: row;
   	justify-content: flex-start;
 	border-bottom: solid 5px #59c23c;
+	background-color: #fff;
 }
 
 /*This is a flex item*/
@@ -181,7 +181,6 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 #mainFooter 
 {
-	margin-top: 40px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
@@ -241,12 +240,41 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 /*Get rid of this, here just to give different height to promo*/
 #contentCon p 
 {
-	line-height: 630px;
+	color: #2280bf;
+	font-size: 18px;
+	font-family: arial, open sans;
 }
 
 #content1 
 {
-	width: 440px;
+	background-color: #c6fcbf;
+	width: 465px;
+	height: 685px;
+	border: solid 1px #000;
+	margin-left: 20px;
+}
+
+#content1 h2
+{
+	margin-left: 20px;
+	margin-top: 80px;
+	font-size: 36px;
+	color: #2280bf;
+}
+
+#content1 h3
+{
+	margin-left: 20px;
+	margin-top: 60px;
+	font-size: 30px;
+	color: #2280bf;
+	margin-bottom: 10px;
+}
+
+#content1 p
+{
+	margin-left: 20px;
+	width: 400px;
 }
 
 #content2 
@@ -259,11 +287,16 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 #productImages 
 {
-	margin-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	padding-right: 30px;
+	padding-left: 30px;
+	width: 900px;
 	display: flex;
 	flex-direction: row;
   	justify-content: space-between;
+  	background-color: #fff;
+  	margin: 0 auto;
 }
 
 #productImages img
