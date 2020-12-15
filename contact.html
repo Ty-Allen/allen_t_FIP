@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Ingersoll Tourism About Us</title>
+<title>Ingersoll Tourism  Us</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
@@ -16,19 +16,28 @@
             	<ul>
             		<li><a href="index.html">Home</a></li>
             		<li><a href="#">Sights</a></li>
-            		<li class="selected"><a href="about.html">About Us</a></li>
-            		<li><a href="#">Contact Us</a></li>
+            		<li><a href="about.html">About Us</a></li>
+            		<li class="selected"><a href="contact.html">Contact Us</a></li>
             	</ul>	
             </nav>
             <!--end mainNav-->
         </header><!--end mainHeader-->
         <section id="contentCon">
-        	<div id="content1">
-        		<h2>About Us</h2>
-        		<h3>Our Goal</h3>
-        		<p>Ingersoll Tourism’s goal is exactly what you might expect. We are here to, not only bring more consumers to Ingersoll, but to bring more people to the wonderful town of Ingersoll to have a fun time and experience new things.</p>
-        		<h3>Motivations</h3>
-        		<p>We are motivated by the great people of Ingersoll and they’re dedication to the town. Ingersoll is a beatiful place and can only become better with the help of everyone in and outside of the community.</p>
+        	<div id="contactContent1">
+        		<h2>Contact Us</h2>
+        		<p id="contactParagraph1">We would love to answer any questions at all! Please contact us using the contact information listed below:</p>
+        		<ul class=socialContact>
+        			<li><a href="#"><img src="images/facebook.svg"></a></li>
+        			<li><a href="#"><img src="images/twitter.svg"></a></li>
+        			<li><a href="#"><img src="images/youtube.svg"></a></li>
+        		</ul>
+        		<p id="contactParagraph2">Email Address: ingersolltourism@hotmail.ca Phone Number: 1-800-Ingtours</p>
+        		<h3>We Can Contact You!</h3>
+        		<label for="email">Email: </label>
+                <input type="email" required id="email" size="30" placeholder="Enter your Email">
+                <label id="contactPhone" for="phone">Phone: (required)</label>
+                <input type="tel" required id="phone" size="30" placeholder="Enter Phone Number">
+                <input id="submit" type="submit" value="Submit">
         	</div>
         	<!--end content1-->
         	<div id="content2">

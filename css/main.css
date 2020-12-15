@@ -131,54 +131,6 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	background-color: #D8FAD6;
 }
 
-#promo 
-{
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: flex-start;
-}
-
-/*Get rid of this, here just to give different height to promo*/
-#promo p 
-{
-	line-height: 250px;
-}
-
-#promoText 
-{
-	width: 600px;
-}
-
-#promoImage 
-{
-	margin-left: auto;
-	width: 280px;
-}
-
-#productInfo 
-{
-	margin-top: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: space-between;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-}
-
-/*Get rid of this, here just to give different height to productInfo*/
-#productInfo p 
-{
-	line-height: 300px;
-}
-
-.productDesc 
-{
-	width: 200px;
-}
-
 #mainFooter 
 {
 	display: flex;
@@ -277,6 +229,115 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	width: 400px;
 }
 
+#contactContent1 
+{
+	background-color: #c6fcbf;
+	width: 465px;
+	height: 685px;
+	border: solid 1px #000;
+	margin-left: 20px;
+}
+
+#contactContent1 h2
+{
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	font-size: 36px;
+	color: #2280bf;
+	border-bottom: 2px solid #2280bf;
+	width: 400px;
+}
+
+#contactContent1 h3
+{
+	margin-top: 40px;
+	margin-left: 20px;
+	font-size: 30px;
+	color: #2280bf;
+}
+
+#contactContent1 p
+{
+	margin-left: 20px;
+	width: 400px;
+}
+
+#contactParagraph1
+{
+	margin-bottom: 45px;
+}
+
+#contactContent1 label
+{
+	display: block;
+	margin-left: 20px;
+	font-size: 18px;
+	color: #2280bf;
+}
+
+#contactContent1 input
+{
+	margin-left: 20px;
+}
+
+#contactContent1 input
+{
+	margin-left: 20px;
+}
+
+#submit
+{
+	display: block;
+	margin-top: 20px;
+	margin-left: 400px;
+	width: 100px;
+	height: 50px;
+	font-size: 24px;
+	font-style: bold;
+	color: #fff;
+	background-color: #2280bf;
+	border: none;
+}
+
+#contactPhone
+{
+	margin-top: 30px;
+}
+
+.socialContact
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 340px;
+	margin: 0 auto;
+}
+
+#contactContent1 ul 
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+.socialContact img
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 2px;
+}
+
+.socialContact li a:hover
+{
+	filter: grayscale(50%);
+}
+
+#contactParagraph2
+{
+	margin-top: 30px;
+	line-height: 40px;
+}
+
 #content2 
 {
 	margin-left: auto;
@@ -345,28 +406,3 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	height: 300px;
 	border: 3px solid #59c23c;
 }
-
-/*Get rid of this, here just to give different height*/
-#contentAreaBig p 
-{
-	line-height: 300px;
-}
-
-#promoImageBig
-{
-	width: 920px;
-}
-
-
-/*Page 4*/
-
-.productDescLargeLeft 
-{
-	width: 410px;
-}
-
-.productDescLargeRight 
-{
-	width: 410px;
-}
-
