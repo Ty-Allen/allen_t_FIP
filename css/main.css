@@ -290,7 +290,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	padding-top: 40px;
 	padding-bottom: 60px;
 	padding-right: 30px;
-	padding-left: 30px;
+	padding-left: 40px;
 	width: 900px;
 	display: flex;
 	flex-direction: row;
@@ -320,6 +320,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	width: 250px;
 	color: #2280bf;
 	font-family: arial, open sans;
+	font-size: 18px;
 }
 
 .productImg 
@@ -340,8 +341,8 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 #contentAreaBig img
 {
-	width: 680px;
-	height: 200px;
+	width: 730px;
+	height: 300px;
 	border: 3px solid #59c23c;
 }
 
