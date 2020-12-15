@@ -340,9 +340,52 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 #content2 
 {
-	margin-left: auto;
-	width: 440px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 500px;
 }
+
+#content2 img
+{
+	width: 300px;
+	border: outset 4px #259b01;
+}
+
+#aboutImage1
+{
+	margin-left: 170px;
+	margin-right: 20px;
+}
+
+#aboutImage2
+{
+	margin-left: 20px;
+}
+
+#aboutImage3
+{
+	margin-left: 170px;
+	margin-right: 20px;
+}
+
+#contactImage1
+{
+	margin-left: 170px;
+	margin-right: 20px;
+}
+
+#contactImage2
+{
+	margin-left: 20px;
+}
+
+#contactImage3
+{
+	margin-left: 170px;
+	margin-right: 20px;
+}
+
 
 /*Page 3*/
 
