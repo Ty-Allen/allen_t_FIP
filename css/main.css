@@ -1,0 +1,450 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Remove this rule, this is only for demo purposes to make the boxes black with white text
+The line height on the <p> tag gives each box a height value*/
+
+/*p
+{
+	color: #fff;
+	line-height: 100px;
+	background: #000;
+	text-align: center;
+	margin: 0;
+}*/
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img 
+{ 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body 
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background-color: #fff;
+}
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer 
+{
+	margin: 0 auto;
+	width: 960px;
+	background-image: linear-gradient(#aceb96, #268209);
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	border-bottom: solid 5px #59c23c;
+	background-color: #fff;
+}
+
+/*This is a flex item*/
+#logo
+{
+	width: 250px;
+	height: 100px;
+}
+
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+#mainNav 
+{
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+#mainNav ul 
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+#mainNav ul li
+{
+	display: inline;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 24px;
+}
+
+#mainNav ul li a
+{
+	color: #2280bf;
+	padding: 5px;
+	font-family: times new roman, arial, open sans;
+}
+
+#mainNav ul li a:hover
+{
+	background-color:  #D8FAD6;
+}
+
+.selected
+{
+	padding: 5px 0px 5px 0px;
+	background-color: #D8FAD6;
+}
+
+#mainFooter 
+{
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+  	background-color: #259b01;
+}
+
+.socialIcons
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 200px;
+	margin-top: 20px;
+	margin-left: 300px;
+	margin-right: 20px;
+}
+
+#socialMedia ul 
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+.socialIcons img
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 2px;
+}
+
+.socialIcons li a:hover
+{
+	filter: grayscale(50%);
+}
+
+#copyRight 
+{
+	margin-top: 50px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	width: 450px;
+	color: #fff;
+	font-size: 18px;
+}
+
+/*Page 2 - Notice we are using one style sheet for all of the pages*/
+
+#contentCon {
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+/*Get rid of this, here just to give different height to promo*/
+#contentCon p 
+{
+	color: #2280bf;
+	font-size: 18px;
+	font-family: arial, open sans;
+}
+
+#content1 
+{
+	background-color: #c6fcbf;
+	width: 465px;
+	height: 685px;
+	border: solid 1px #000;
+	margin-left: 20px;
+}
+
+#content1 h2
+{
+	margin-left: 20px;
+	margin-top: 80px;
+	font-size: 36px;
+	color: #2280bf;
+}
+
+#content1 h3
+{
+	margin-left: 20px;
+	margin-top: 60px;
+	font-size: 30px;
+	color: #2280bf;
+	margin-bottom: 10px;
+}
+
+#content1 p
+{
+	margin-left: 20px;
+	width: 400px;
+}
+
+#contactContent1 
+{
+	background-color: #c6fcbf;
+	width: 465px;
+	height: 685px;
+	border: solid 1px #000;
+	margin-left: 20px;
+}
+
+#contactContent1 h2
+{
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	font-size: 36px;
+	color: #2280bf;
+	border-bottom: 2px solid #2280bf;
+	width: 400px;
+}
+
+#contactContent1 h3
+{
+	margin-top: 40px;
+	margin-left: 20px;
+	font-size: 30px;
+	color: #2280bf;
+}
+
+#contactContent1 p
+{
+	margin-left: 20px;
+	width: 400px;
+}
+
+#contactParagraph1
+{
+	margin-bottom: 45px;
+}
+
+#contactContent1 label
+{
+	display: block;
+	margin-left: 20px;
+	font-size: 18px;
+	color: #2280bf;
+}
+
+#contactContent1 input
+{
+	margin-left: 20px;
+}
+
+#contactContent1 input
+{
+	margin-left: 20px;
+}
+
+#submit
+{
+	display: block;
+	margin-top: 20px;
+	margin-left: 400px;
+	width: 100px;
+	height: 50px;
+	font-size: 24px;
+	color: #fff;
+	background-color: #2280bf;
+	border: none;
+}
+
+#contactPhone
+{
+	margin-top: 30px;
+}
+
+.socialContact
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 340px;
+	margin: 0 auto;
+}
+
+#contactContent1 ul 
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+.socialContact img
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 2px;
+}
+
+.socialContact li a:hover
+{
+	filter: grayscale(50%);
+}
+
+#contactParagraph2
+{
+	margin-top: 30px;
+	line-height: 40px;
+}
+
+#content2 
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 500px;
+}
+
+#content2 img
+{
+	width: 300px;
+	border: outset 4px #259b01;
+}
+
+#aboutImage1
+{
+	margin-left: 170px;
+	margin-right: 20px;
+}
+
+#aboutImage2
+{
+	margin-left: 20px;
+}
+
+#aboutImage3
+{
+	margin-left: 170px;
+	margin-right: 20px;
+}
+
+#contactImage1
+{
+	margin-left: 170px;
+	margin-right: 20px;
+}
+
+#contactImage2
+{
+	margin-left: 20px;
+}
+
+#contactImage3
+{
+	margin-left: 170px;
+	margin-right: 20px;
+}
+
+
+/*Page 3*/
+
+#productImages 
+{
+	padding-top: 40px;
+	padding-bottom: 60px;
+	padding-right: 30px;
+	padding-left: 40px;
+	width: 900px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+  	background-color: #fff;
+  	margin: 0 auto;
+}
+
+#productImages img
+{
+	width: 250px;
+	height: 200px;
+	border: solid 2px #2280bf;
+}
+
+#productImages h2
+{
+	color: #2280bf;
+	font-size: 36px;
+	padding: 0;
+	margin: 10px 0 0 0;
+}
+
+#productImages p
+{
+	line-height: 20px;
+	width: 250px;
+	color: #2280bf;
+	font-family: arial, open sans;
+	font-size: 18px;
+}
+
+.productImg 
+{
+	width: 280px;
+}
+
+
+#contentAreaBig
+{
+	display: flex;
+	justify-content: center;
+	padding-top: 40px;
+	border-bottom: solid 1px #259b01;
+	padding-bottom: 40px;
+	background-image: linear-gradient(#bbf7a6, #7fc766);
+}
+
+#contentAreaBig img
+{
+	width: 730px;
+	height: 300px;
+	border: 3px solid #59c23c;
+}
